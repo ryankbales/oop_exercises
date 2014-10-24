@@ -3,6 +3,10 @@ class MyCar
   attr_accessor :color
   attr_reader :year
 
+  def self.mileage(gallons, miles)
+    puts "#{miles / gallons} miles per gallon"
+  end
+
   def initialize(year, model, color)
     @year = year
     @color = color
@@ -33,9 +37,17 @@ class MyCar
     self.color = color
   end
 
+  def to_s
+    "My car is a #{self.color}, #{self.year}, #{@model}!"
+  end
+
 end
 
+MyCar.mileage(16, 420)
+
 sharon = MyCar.new(1992, 'honda accord', 'white')
+
+puts sharon
 # sharon.speed_up(20)
 # sharon.speed
 # sharon.speed_up(20)
