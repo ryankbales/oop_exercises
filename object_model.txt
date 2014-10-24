@@ -1,0 +1,22 @@
+1. To create an object in ruby, we use the keyword Class.
+
+      Class BirdDog
+      end
+
+      cinder = BirdDog.new
+
+2.  By using the keyword include we can mixin what is called Modules, a collection of methods and/or behaviors
+    that can be used in a Class.
+
+      module Command
+        def command(command)
+          puts #{command}
+        end
+      end
+
+      Class BirdDog
+        include Command
+      end
+
+      cinder = BirdDog.new
+      cinder.command("Sit")
