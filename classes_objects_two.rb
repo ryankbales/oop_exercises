@@ -48,18 +48,9 @@ MyCar.mileage(16, 420)
 sharon = MyCar.new(1992, 'honda accord', 'white')
 
 puts sharon
-# sharon.speed_up(20)
-# sharon.speed
-# sharon.speed_up(20)
-# sharon.speed
-# sharon.brake(20)
-# sharon.speed
-# sharon.brake(20)
-# sharon.speed
-# sharon.shut_down
-# sharon.speed
 
-puts sharon.color
-sharon.spray_paint("red")
-puts sharon.color
-# puts sharon.year
+
+#3
+
+#  The snippet of code does not have access to update the name attribute.  You would have to use attr_accessor rather than
+#  att_reader to allow access to update the name.
